@@ -1,0 +1,16 @@
+<h1>Template-driven Form Example:</h1>
+<form #f="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+    <p>
+        <label>First Name:</label>
+        <input type="text" name="firstname"
+            [(ngModel)]="user.firstName" required>
+    </p>
+    <p>
+        <label>Password:</label>
+        <input type="password" name="password"
+            [(ngModel)]="user.password" required>
+    </p>
+    <p>
+        <button type="submit" [disabled]="!f.valid">Submit</button>
+    </p>
+</form>
