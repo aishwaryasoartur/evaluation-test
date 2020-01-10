@@ -14,6 +14,7 @@ import { SecondChildComponent } from './second-child/second-child.component';
 import { ThirdChildComponent } from './third-child/third-child.component';
 import { SearchPipePipe } from './search-pipe.pipe';
 import { FourthComponent } from './fourth/fourth.component';
+import { FirstChildBindComponent } from './first-child-bind/first-child-bind.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FourthComponent } from './fourth/fourth.component';
     SecondChildComponent,
     ThirdChildComponent,
     SearchPipePipe,
-    FourthComponent
+    FourthComponent,
+    FirstChildBindComponent
   ],
   imports: [
     BrowserModule,
